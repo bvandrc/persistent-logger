@@ -41,14 +41,17 @@
     "provenance": true
   },
   "scripts": {
+    "__c0": "====================[ Build & Development ]======================",
+    "prepublishOnly": "pnpm run check && pnpm run test && pnpm run build",
     "build": "tsdown",
+    "__c1": "====================[ Linting & Type Checking ]==================",
+    "check": "pnpm run ts:check && pnpm run lint",
     "format": "biome check . --fix",
     "lint": "biome check .",
     "ts:check": "tsc",
+    "__c2": "====================[ Unit Testing ]=============================",
     "test": "vitest run",
-    "test:watch": "vitest",
-    "check": "pnpm run ts:check && pnpm run lint",
-    "prepublishOnly": "pnpm run check && pnpm run test && pnpm run build"
+    "test:watch": "vitest"
   },
   "peerDependencies": {
     "react": "^18 || ^19"
