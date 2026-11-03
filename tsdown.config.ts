@@ -12,7 +12,7 @@ export default defineConfig({
   deps: {
     // Bundled, so only a dev dependency: what the core uses from it is
     // inlined, and a consumer installs nothing for it.
-    onlyBundle: ['@bvandrc/react-ui-hooks'],
+    onlyBundle: ['@bvandrc/react-toolkit'],
     // The imports the output may keep: its dependencies, and React, which
     // only `/react` imports.
     onlyImport: ['es-toolkit', 'serialize-error', 'react'],
