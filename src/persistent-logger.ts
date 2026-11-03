@@ -6,7 +6,7 @@
  */
 
 // A dev dependency, inlined by the build -- see `tsdown.config.ts`.
-import { onAppLeave } from '@bvandrc/react-ui-hooks'
+import { onAppLeave } from '@bvandrc/react-toolkit'
 import { isError, isNotNil, sortBy } from 'es-toolkit'
 import { serializeError } from 'serialize-error'
 
