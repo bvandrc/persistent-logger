@@ -1,5 +1,6 @@
 /**
  * @fileoverview A log kept on the device, for production diagnostics.
+ *
  * Captures timestamped action logs in a capped buffer kept in localStorage, so
  * a report still covers what happened before a reload, an app update, or the
  * app being closed and reopened.
@@ -51,7 +52,9 @@ export class PersistentLogger<Scope extends string = string> {
   /** Whether each entry is echoed to the console as it's logged. */
   readonly logToConsole: boolean
   /**
-   * Logged since this page last wrote to storage. Storage itself is read only
+   * Logged since this page last wrote to storage.
+   *
+   * Storage itself is read only
    * when a report or a write needs it, so app load parses nothing.
    */
   private unsavedEntries: LogEntry[] = []

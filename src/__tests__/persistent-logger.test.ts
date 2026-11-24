@@ -113,7 +113,9 @@ describe('PersistentLogger.getEntries', () => {
 
 describe('PersistentLogger persistence', () => {
   /**
-   * A fresh logger, as a reload or a relaunch gets one. Each case writes
+   * A fresh logger, as a reload or a relaunch gets one.
+   *
+   * Each case writes
    * through its own: every earlier one is still listening, and the newest
    * writes last.
    */
